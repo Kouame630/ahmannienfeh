@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,500;0,600;0,700;0,800;0,900;1,300;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgb(35, 35, 85);
+}
+
+span {
+    font-size: 1.9rem;
+    color: #757373;
+}
+
+h6 {
+    font-size: 1.1rem;
+    color: rgb(24, 24, 49);
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw 8vw;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.15);
+    z-index: 10;
+}
+
+nav img {
+    width: 175px;
+    height: 125px;
+    cursor: pointer;
+}
+
+
+nav .navigation {
+    display: flex;
+    align-items: center;
+}
+
+nav .navigation i {
+    padding: 20px;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+#menu-close, #menu-btn {
+    display: none;
+}
+
+nav .navigation ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav .navigation ul li {
+    list-style: none;
+    margin-left: 30px;
+}
+
+nav .navigation ul li a {
+    text-decoration: none;
+    color: rgb(21, 21, 100);
+    font-size: 20px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+nav .navigation ul li a:hover {
+    color: #fdc93b;
+}
+
+.cours {
+    background-image:linear-gradient(rgba(234, 180, 80, 0.988), rgba(221, 203, 218, 0.988)), 
+    url(images/bacck0.JPG);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.cours .text {
+    margin-top: 185px;
+    color: #12145de0;
+    font-size: 1.3rem;
+    letter-spacing: 0.5px;
+    padding: 0 20px;
+    padding-bottom: 15px;
+}
+
+.cours .text p {
+    width: 100%;
+}
+
+.cours .prix {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.cours .prix .nonaff {
+    padding: 20px;
+    width: 100%;
+}
+
+.cours .prix .aff {
+    padding: 20px;
+    width: 90%;
+}
+
+.cours .prix .fraisconn {
+    padding: 20px;
+    width: 70%;
+}
+
+body {
+	background-color: tint(cornflowerblue, 60%);
+}
+
+table {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+table, th, td {
+    border: 0.125rem solid rgb(0, 0, 0);
+    border-collapse: collapse;
+}
+
+caption {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #0f0f39e0;
+    padding-bottom: 5px;
+}
+footer {
+    padding: 4vw;
+    background-color: #101c32;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+footer .copyright {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+footer .copyright p {
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+footer .copyright .pro-links {
+    margin: 0 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+footer .copyright .pro-links i {
+    padding: 5px 5px;
+    border-radius: 5px;
+    font-size: 100px;
+    background-color: #5f7185;
+    color: #fff;
+}
+
+footer .copyright .pro-links i:hover {
+    background-color: #fdc93b;
+    color: #2c2c2c;
+}
+
+@media screen and (max-width: 769px) {
+    nav {
+        padding: 10px 50px;
+    }
+
+    nav img {
+        width: 115px;
+        height: 115px;
+    }
+
+    #menu-btn {
+        display: initial;
+    }
+
+    #menu-close {
+        display: initial;
+        font-size: 1.6rem;
+        color: #fff;
+        padding: 30px 0 20px 20px;
+    }
+
+    nav .navigation ul {
+        position: absolute;
+        top: 0;
+        right: -220px;
+        width: 220px;
+        height: 100vh;
+        background: rgba(17, 20, 104, 0.45);
+        backdrop-filter: blur(.5px);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        transition: 00.3s ease;
+    }
+
+    nav .navigation ul.active {
+        right: 0;
+    }
+
+
+    nav .navigation ul li {
+        padding: 20px 0 20px 40px;
+        margin-left: 0;
+    }
+
+    nav .navigation ul li a {
+        color: #fff;
+    }
+
+    .cours {
+        padding-top: 0px;
+    }
+
+    .cours .text {
+        width: 100%;
+        padding: 0;
+    }
+
+    .cours .prix {
+        padding: 0;
+    }
+
+    .cours .prix .nonaff {
+        padding: 5px;
+        width: 100%;
+    }
+    
+    .cours .prix .aff {
+        padding: 5px;
+        width: 100%;
+    }
+    
+    .cours .prix .fraisconn {
+        padding: 10px;
+        width: 100%;
+    }
+
+    #fix-width {
+        width: 100%;
+        overflow-y: hidden;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        padding-right: 10px;
+    }
+    
+    .nonaff, .aff {
+        &::-webkit-scrollbar {
+            width: 10px;
+        }
+        &::-webkit-scrollbar:horizontal {
+            height: 10px;
+        }
+        &::-webkit-scrollbar-track {
+            background-color: transparentize(#ccc, 0.7);
+        }
+        &::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            background: transparentize(#ccc, 0.5);
+            box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+        }
+    }
+    
+    footer .copyright .pro-links {
+        margin: 3px;
+    }
+
+    footer .copyright .pro-links i {
+        font-size: 75px;
+    }
+}

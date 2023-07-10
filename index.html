@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>collegpriveahmanienfehcotedivoire</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="https://kit.fontawesome.com/0c7f4411f3.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script defer src="JavaScript/app.js"></script>
+</head>
+<body>
+    <!--Navigation-->
+    <nav>
+        <div class="logo">
+            <a href="index.html"><img src="zLogo ecole.svg" alt="img"></a>
+        </div>
+        <div class="navigation">
+            <ul>
+                <i id="menu-close" class="fa-solid fa-xmark"></i>
+                <li>
+                    <a href="index.html">Acceuil</a>
+                </li>
+                <li>
+                    <a href="propos.html">A propos</a>
+                </li>
+                <li>
+                    <a href="cours.html">cours</a>
+                </li>
+                <li>
+                    <a href="contact.html">Nous Contacter</a>
+                </li>
+            </ul>
+            <i id="menu-btn" class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <!--Home-->
+
+    <section id="home">
+
+        <div class="wrapper eight">
+            <h3 class="smoke">
+                <span>Bienvenue sur le site du collège privé ahmanien fêh</span>
+            </h3>
+        </div>
+        <h2>COLLÈGE PRIVÉ AHMANNIEN FÊH Côte d'Ivoire</h2>
+        <p>
+            <strong>Établissement d'enseignement Général</strong>
+            de 1er (6e) et de second (2nd) cycle autorisé par le Ministère
+            l'Éducation Nationale et de l'Alphabétisation (MENA)
+            de la république de Côte d'Ivoire sous le code 041611.
+        </p>
+        <div class="btn">
+            <a class="blue" href="details/propos.html">Apprendre Plus</a>
+            <a class="yellow" href="details/cours.html">Visiter nos Cours</a>
+            <a class="black" href="details/contact.html">Nous Contacter</a>
+        </div>
+    </section>
+
+    <section id="features">
+        <h1>Nos Atouts</h1>
+        <p>En plus de son lot d'enseignant <strong>experimenté,
+        certifié et disponible</strong>, le collège privé <strong>ahmanien fêh</strong>
+        est équipé d'une:</p>
+        <div class="fea-base">
+            <div class="fea-box">
+                <i class="fa-solid fa-hospital"></i>                
+                <h3>Infirmerie</h3>
+                <p>pour garder ses étudiants en bonne santé durant vos études</p>
+            </div>
+            <div class="fea-box">
+                <i class="fa-solid fa-book-atlas"></i>
+                <h3>Bibliothèque</h3>                
+                <p>pour accompagner ses étudiants dans leur apprentissage</p>
+            </div>
+            <div class="fea-box">
+                <i class="fa-solid fa-flask-vial"></i>                
+                <h3>Laboratoire équipé</h3>
+                <p>pour allier la pratique à la théorie</p>
+            </div>
+            <div class="fea-box">
+                <i class="fa-solid fa-medal"></i>                
+                <h3>Infrastructures sportives</h3>
+                <p>pour pratiquer tout type de sports</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="event">
+        <h1>Nos évènements</h1>
+        <p>En plus de ses <strong>équipements et locaux</strong>disponible pour accompagner ses étudiants, 
+        le collège privé <strong>ahmanien fêh</strong>
+        organise des sorties et autre types d'evenement culturels a titre de formation de culture générale</p>
+        <div class="sortis">
+           <div class="slideshow">
+            <p class="title"></p>
+            <img name="slide" id="slides" width="500" height="500">
+           </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="copyright">
+            <p>Copyright @2023. Tout droit réservé/ Site créé par KokoDesign</p>
+            <div class="pro-links">
+                <a href="https://www.facebook.com/kokora.nestor"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/c.o.d.art/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/kouame-kokora-02b417111/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://twitter.com/41b5c690404a491"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        $('#menu-btn').click(function() {
+            $('nav .navigation ul').addClass('active')
+        });
+
+        $('#menu-close').click(function() {
+            $('nav .navigation ul').removeClass('active')
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacter</title>
+    <link rel="stylesheet" href="CSS/contact.css">
+    <script src="https://kit.fontawesome.com/0c7f4411f3.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="index.html"><img src="zLogo ecole.svg" alt="img"></a>
+        </div>
+        <div class="navigation">
+            <ul>
+                <i id="menu-close" class="fa-solid fa-xmark"></i>
+                <li>
+                    <a href="index.html">Acceuil</a>
+                </li>
+                <li>
+                    <a href="propos.html">A propos</a>
+                </li>
+                <li>
+                    <a href="cours.html">cours</a>
+                </li>
+                <li>
+                    <a href="contact.html">Nous Contacter</a>
+                </li>
+            </ul>
+            <i id="menu-btn" class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <section id="registration">
+        <div class="reminder">
+            <p>Vous avez des questions à nous poser?</p>
+            <h2>Ecrivez nous par ici</h2>
+        </div>
+        <div class="form">
+            <form action="https://formsubmit.co/collegeahmannienfeh@gmail.com" method="POST">
+                <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
+                <input type="hidden" name="_subject" value="New submission!">
+                <input type="hidden" name="_blacklist" value="spammy pattern, banned term, phrase">
+                <input type="hidden" name="_captcha" value="false">
+                <ul>
+                    <li>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="user_name" required>
+                    </li>
+                    <li>
+                        <label for="mail">E-mail:</label>
+                        <input type="email" id="mail" name="user_email" required>
+                    </li>
+                    <li>
+                        <label for="msg">Message:</label>
+                        <textarea id="msg" name="user_message" required></textarea>
+                    </li>
+                    <li class="button">
+                        <button type="submit">Envoyez votre Message</button>
+                    </li>
+                </ul>
+                <style>
+                    ul {
+                        list-style: none;
+                        padding:0;
+                        margin: o;
+                    }
+                </style>
+            </form>
+        </div>
+    </section>
+
+    <script>
+        $('#menu-btn').click(function() {
+            $('nav .navigation ul').addClass('active')
+        });
+
+        $('#menu-close').click(function() {
+            $('nav .navigation ul').removeClass('active')
+        });
+    </script>
+
+    <footer>
+        <div class="copyright">
+            <p>Copyright @2022. Tout droit reserve/ Site cree par KokoDesign</p>
+            <div class="pro-links">
+                <a href="https://www.facebook.com/kokora.nestor"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/c.o.d.art/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/kouame-kokora-02b417111/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://twitter.com/41b5c690404a491"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

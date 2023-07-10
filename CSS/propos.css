@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,500;0,600;0,700;0,800;0,900;1,300;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/*Global Tags*/
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgb(35, 35, 85);
+}
+
+h2 {
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: rgb(230, 230, 233);
+    padding-bottom: 10px;
+}
+
+span {
+    font-size: 1.9rem;
+    color: #757373;
+}
+
+h6 {
+    font-size: 1.1rem;
+    color: rgb(24, 24, 49);
+}
+
+/*Navigation*/
+
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw 8vw;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.15);
+    z-index: 10;
+}
+
+nav img {
+    width: 175px;
+    height: 125px;
+    cursor: pointer;
+}
+
+
+nav .navigation {
+    display: flex;
+    align-items: center;
+}
+
+nav .navigation i {
+    padding: 20px;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+#menu-close, #menu-btn {
+    display: none;
+}
+
+nav .navigation ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav .navigation ul li {
+    list-style: none;
+    margin-left: 30px;
+}
+
+nav .navigation ul li a {
+    text-decoration: none;
+    color: rgb(21, 21, 100);
+    font-size: 20px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+nav .navigation ul li a:hover {
+    color: #fdc93b;
+}
+
+/*Home*/
+
+#propos {
+    background-image:linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)), 
+    url(images/bacck0.JPG);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 20px;
+}
+
+#propos .text {
+    justify-self: center;
+    text-align: center;
+    margin-top: 130px;
+    padding: 30px;
+}
+
+
+#propos .text p {
+    justify-content: flex-start;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+    font-size: 1.2rem;
+    line-height: 25px;
+}
+
+#propos .prix {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    justify-self: center;
+}
+
+#propos .prix .honneur, .firape, .InterKermess {
+    width: 100%;
+}
+
+#propos .prix img {
+    width: 600px;
+    height: 600px;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+#propos .location {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+}
+
+#propos .location #text {
+    padding: 20px;
+}
+
+#propos .location #text p {
+    justify-content: flex-start;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+    font-size: 1.2rem;
+    line-height: 25px;
+}
+
+#propos .location .map {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#propos .location .map .ici {
+    margin-right: 30px;
+    padding-right: 30px;
+}
+
+#propos .location .map .ici p {
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+#propos .location .map .frame {
+    margin-left: 10px;
+    padding-left: 10px;
+}
+
+iframe {
+    border-radius: 10px;
+}
+/* Footer*/
+
+footer {
+    padding: 4vw;
+    background-color: #101c32;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+footer .copyright {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+footer .copyright p {
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+footer .copyright .pro-links {
+    margin: 0 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+footer .copyright .pro-links i {
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 100px;
+    background-color: #5f7185;
+    color: #fff;
+}
+
+footer .copyright .pro-links i:hover {
+    background-color: #fdc93b;
+    color: #2c2c2c;
+}
+
+@media screen and (max-width: 769px) {
+    nav {
+        padding: 10px 50px;
+    }
+
+    nav img {
+        width: 115px;
+        height: 115px;
+    }
+
+    #menu-btn {
+        display: initial;
+    }
+
+    #menu-close {
+        display: initial;
+        font-size: 1.6rem;
+        color: #fff;
+        padding: 30px 0 20px 20px;
+    }
+
+    nav .navigation ul {
+        position: absolute;
+        top: 0;
+        right: -220px;
+        width: 220px;
+        height: 100vh;
+        background: rgba(17, 20, 104, 0.45);
+        backdrop-filter: blur(.5px);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        transition: 00.3s ease;
+    }
+
+    nav .navigation ul.active {
+        right: 0;
+    }
+
+
+    nav .navigation ul li {
+        padding: 20px 0 20px 40px;
+        margin-left: 0;
+    }
+
+    nav .navigation ul li a {
+        color: #fff;
+    }
+
+    #propos {
+        padding-top: 0px;
+    }
+
+    #propos .prix img {
+        width: 100%;
+        height: 350px;
+    }
+    
+
+    #propos .text p {
+        padding: 5px;
+    }
+
+    #propos .location .map {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #propos .location .map .ici {
+        padding-bottom: 5px;
+        margin-right: 0px;
+        padding-right: 0px;
+    }
+    
+    #propos .location .map .frame {
+        width: 100%;
+    }
+
+    iframe {
+        width: 100%;
+    }
+
+    footer .copyright .pro-links {
+        margin: 5px;
+    }
+
+    footer .copyright .pro-links i {
+        font-size: 75px;
+    }
+}

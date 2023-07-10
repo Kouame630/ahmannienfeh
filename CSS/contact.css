@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,500;0,600;0,700;0,800;0,900;1,300;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/*Global Tags*/
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgb(35, 35, 85);
+}
+
+span {
+    font-size: 1.9rem;
+    color: #757373;
+}
+
+h6 {
+    font-size: 1.1rem;
+    color: rgb(24, 24, 49);
+}
+
+/*Navigation*/
+
+nav {
+    padding: 1vw 8vw;
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.15);
+    z-index: 10;
+}
+
+nav img {
+    width: 175px;
+    height: 125px;
+    cursor: pointer;
+}
+
+
+nav .navigation {
+    display: flex;
+    align-items: center;
+}
+
+nav .navigation i {
+    padding: 20px;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+#menu-close, #menu-btn {
+    display: none;
+}
+
+nav .navigation ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav .navigation ul li {
+    list-style: none;
+    margin-left: 30px;
+}
+
+nav .navigation ul li a {
+    text-decoration: none;
+    color: rgb(21, 21, 100);
+    font-size: 20px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+nav .navigation ul li a:hover {
+    color: #fdc93b;
+}
+
+#registration {
+    padding: 6vw 8vw 6vw 8vw;
+    background-image: linear-gradient(rgba(99, 112, 168, 0.5), rgba(81, 91, 233, 0.5)),
+    url(images/sign.jpg);
+    width: 100%;
+    height: 105vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#registration .reminder {
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+    margin-top:135px;
+    color: #fff;
+}
+
+#registration .reminder h1 {
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+}
+
+#registration .form {
+    margin: 8px 0;
+    justify-content: center;
+    background: #fff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 70%;
+    padding: 10px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+
+}
+
+#registration .form ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#registration .form ul li {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+#registration .form input {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    width: 90%;
+    margin: 15px 0;
+    padding: 15px 10px;
+    border: 1px solid rgb(84, 40, 241);
+    outline: none;
+    border-radius: 5px;
+}
+
+#registration .form label {
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+#registration .form textarea {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    width: 80%;
+    height: 150px;
+    margin: 15px 0;
+    padding: 15px 10px;
+    border: 1px solid rgb(84, 40, 241);
+    outline: none;
+    border-radius: 5px;
+}
+
+button {
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 65%;
+    height: 45px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: #fdc93b;
+}
+
+/* Footer*/
+
+footer {
+    padding: 4vw;
+    background-color: #101c32;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+footer .copyright {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+footer .copyright p {
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+footer .copyright .pro-links {
+    margin: 0 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+footer .copyright .pro-links i {
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 100px;
+    background-color: #5f7185;
+    color: #fff;
+}
+
+footer .copyright .pro-links i:hover {
+    background-color: #fdc93b;
+    color: #2c2c2c;
+}
+
+@media screen and (max-width: 769px) {
+    nav {
+        padding: 0px 50px;
+    }
+
+    nav img {
+        width: 115px;
+        height: 115px;
+    }
+
+    #menu-btn {
+        display: initial;
+    }
+
+    #menu-close {
+        display: initial;
+        font-size: 1.6rem;
+        color: #fff;
+        padding: 30px 0 20px 20px;
+    }
+
+    nav .navigation ul {
+        position: absolute;
+        top: 0;
+        right: -220px;
+        width: 220px;
+        height: 100vh;
+        background: rgba(17, 20, 104, 0.45);
+        backdrop-filter: blur(.5px);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        transition: 0.3s ease;
+    }
+
+    nav .navigation ul.active {
+        right: 0;
+    }
+
+
+    nav .navigation ul li {
+        padding: 20px 0 20px 40px;
+        margin-left: 0;
+    }
+
+    nav .navigation ul li a {
+        color: #fff;
+    }
+
+    #registration {
+        padding: 5px;
+        padding-bottom: 20px;
+        height: 100vh;
+    }
+
+    #registration .reminder {
+        margin-top: 120px;
+    }
+
+    #registration .form {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    #registration .form ul li {
+        padding: 5px;
+        width: 100%;
+    }
+
+    #registration .form .button {
+        width: 85%;
+    }
+    
+    button {
+        font-family: 'Poppins', sans-serif;
+        font-size: 1rem;
+        font-weight: 600;
+        width: 100%;
+        height: 45px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+
+    footer .copyright {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    
+    footer .copyright .pro-links {
+        padding: 5px ;
+        margin-top: 20px;
+    }
+
+    footer .copyright .pro-links i {
+        font-size: 70px;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    #registration {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #registration .reminder {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 120px;
+        margin-bottom: 20px;
+    }
+}
