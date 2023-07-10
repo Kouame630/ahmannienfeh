@@ -337,12 +337,11 @@ footer .copyright .pro-links i:hover {
     }
     
     footer .copyright .pro-links {
-        padding: 5px ;
-        margin-top: 20px;
+        margin: 3px;
     }
 
     footer .copyright .pro-links i {
-        font-size: 70px;
+        font-size: 75px;
     }
 }
 
